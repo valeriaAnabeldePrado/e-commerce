@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Poppins:wght@100;200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>AURA Make-up E-commerce</title>
+</head>
+<body>
+    <main>
+        <h1>AURA Makeup</h1>
+        <!--CARTEL COMPRAS OK-->
+        <section class="contenedor-compra contenedor-none" id="contenedor-compraOK">
+            <div  class="fondo-compraOK container">
+                <div class="row">
+                    <div class="contenedor-compraItems bajar-Cartel col-sm-8 col-md-6  col-xl-5" id="bajarCartel">
+                        <i class="bi bi-x close" id="closee"></i>
+                        <h3>Compra realizada</h3>
+                        <h4>Muchas gracias</h4>
+                </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <header class=" headItem">
+            <!--MENU-EJEMPLO-->
+            <nav class="navbar navbar-expand-lg bg-light">
+                <div class="container-fluid">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <img src="./img/logo-Aura.jpg" alt="logo-aura" height="50px">
+                  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Productos</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Makeup box</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Sale</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+            <!--BOTON-CARRITO-->
+            <div class="cont-btn">
+                <button class="btn-bag" id="btn-compras"><i class="bi bi-bag-heart btn-bag-i"></i></button>
+            </div>
+            <!--MENU-COMPRAS-->
+            <nav>
+                <div class="menuToggler1 menuActive" id="menuToggler">
+                    <div id="btnCerrar" class="contenedorSpan"><span class="cerrar"></span></div> 
+                    <h3 class="titulo">Productos seleccionados</h3>
+                    <section class="container productos" id="productosOk">
+            
+                    </section>
+                    <h4>Total de compra: $<span id="totalCompra">0</span></h4>
+                    <h4 id="vaciarCarrito" class="carritoVacio">Vaciar carrito</h4>
+                    <h4 class="menu-finalItem" id="compraOK">Finalizar compra</h4>
+                    <h4 class="agregar" id="add"></h4>
+                </div>
+            </nav>
+            <!--INICIO-BANNER-->
+            <div class="container-fluid contenedorTipos">
+                <h2 class="headh3">PRODUCTOS</h2>
+            </div>
+        </header>
+        
+        <section class= "contenedor-banner">
+            <article class="banner">
+                <img src="./img/bannerMakeup.jpg" alt="banner-img" class="banner-img">
+                <h3 class="banner-imgH3">Maquillaje </h3>
+                <h2 class="banner-imgH2">Importado</h2>
+                <div class="banner-items">
+                    <div class="banner-p"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae excepturi voluptates iure accusamus dolorem magnam adipisci porro libero quibusdam.</p></div>
+                </div>
+            </article>
+        </section>
+
+        <section class="body-cards">
+                <h2 class="text-h2">Cosmetica Aura- Lorem ipsum dolor sit amet. </h2>
+            <hr>
+            <div class="container contenedor-cards">
+                <section id="contenedor-cardsE" class="row">
+    
+                </section>
+            </div>
+        </section>
+    </main>
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="./js/main.js" type="module"></script>
+</body>
+</html>
